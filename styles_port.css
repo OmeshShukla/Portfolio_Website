@@ -1,0 +1,207 @@
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+/*    background-color: gray;*/
+    font-family: 'Libre Baskerville';
+}
+/*display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: var(--main-red);
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+z-index: 10;*/
+header {
+    margin: 8px;
+}
+h1 h2 h3 h4 h5 h6{
+    line-height: 0;
+
+}
+hr {
+    border: 1px solid orange;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0em;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 2em;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+/*section : welcome*/
+
+#welcome-section {
+    display: flex;
+    background-image: url("https://media.istockphoto.com/photos/side-view-of-senior-man-head-picture-id187715952?k=20&m=187715952&s=612x612&w=0&h=WETWuvCP4apEwVUBXn5WtPiBM90g68RBOmE4bS2vT_w=");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22em 6em 22em;
+    margin-top: 2em;
+}
+#welcome-section h1 {
+    color: white;
+    font-size: 3em;
+}
+
+#welcome-section h4 {
+    color: white;
+    padding: 2em 0em;
+}
+.about-me-button {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: orange;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 8px;
+}
+
+
+#projects {
+    text-align: center;
+    left: 0;
+    background-color: #1d1d1d;
+}
+
+.project-header {
+    font-size: 30px;
+    font-weight: 200px;
+    padding: 1em 2em;
+    color: white;
+}
+#project-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-column-end: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    grid-auto-rows: 20em;
+    padding: 16px;
+}
+#projects img {
+    display: block;
+    width: 25em;
+    height: 15em;
+    object-position: 0px;
+    object-fit: cover;
+}
+#projects a {
+    text-decoration: none;
+}
+#projects p {
+    background-color: rgb(26, 26, 26);
+    width: 25em;
+    text-align: center;
+    color: white;
+    margin:0 0 0 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/*contact-section*/
+
+#contact {
+    background: rgba(0, 0, 0, 0.2)url(https://image.jimcdn.com/app/cms/image/transf/dimension=4096x4096:format=jpg/path/s00c711fd14617aed/image/ic58f31854f342cd9/version/1481991482/image.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+    background-blend-mode: darken;
+}
+
+#contact header {
+    text-align: center;
+    color: rgb(227, 223, 223);
+    font-size: 2em
+}
+
+#contact p {
+    color: rgb(227, 223, 223);
+    padding: 1em;
+    text-align: center;
+}
+
+#border {
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 0.5em;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 16px 0;
+    border: 0;
+    background-color: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text {
+    height: 20em;
+    resize: none;
+}
+
+.contact-form-btn {
+    float: right;
+    border: none;
+    background-color: orange;
+    padding: 0.8em 2.5em;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.contact-form-btn:hover {
+    padding: 1em 2.7em;
+    background: rgb(255, 179, 39);
+}
